@@ -1,70 +1,67 @@
-# Getting Started with Create React App
+# Project Title
+STUDENT-CENTRIC-LMS
+## Prerequisites
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Before you begin, ensure you have the following installed on your local machine:
 
-## Available Scripts
+- **[Node.js](https://nodejs.org/en/)** (version 14.x or higher)
+- **[npm](https://www.npmjs.com/)** (npm comes with Node.js)
 
-In the project directory, you can run:
+To check if Node.js and npm are installed, run the following commands in your terminal:
 
-### `npm start`
+```bash
+node -v
+npm -v
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Steps
+git clone <repository-url>
+cd <project-folder>
+npm install
+npm start
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
 
-### `npm test`
+-------------------------------------------------------Spring Boot Backend Setup Guide----------------------------------------------
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Prerequisites
+Before you begin, ensure that you have the following tools installed:
+Spring Tool Suite (STS) or Eclipse with the Spring Plugin.
+Download STS from Spring's official site.
+Java Development Kit (JDK):
+You need JDK 8 or higher. You can download it from Oracle or install through OpenJDK.
+Maven (if not included with STS):
+Maven is used for managing dependencies and building the project. You can download Maven from Apache Maven.
+MySQL Database:
+Ensure you have MySQL installed and running locally, or use an external database server. 
 
-### `npm run build`
+---------------------------------Import the Spring Boot Project-----------------------------------
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+To get started with your Spring Boot project, follow these steps:
+Download the ZIP file containing the Spring Boot project.
+Extract the ZIP file to your local machine.
+Import the Project into STS:
+Open Spring Tool Suite (STS) or Eclipse.
+Go to File > Import > Existing Maven Projects.
+Browse to the extracted folder and select the project directory.
+Click Finish to import the project.
+2. Configure application.properties
+You need to configure the database connection and other project-specific properties in the application.properties file. Follow these steps:
+Locate the application.properties file:
+In the project folder, navigate to src/main/resources/application.properties.
+Modify the properties:
+Open application.properties in a text editor or within STS.
+Add or modify the following properties based on your project’s requirements:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+---------------------------------------------------------application.properties------------------------------------------------
 
-### `npm run eject`
+# Database Configuration
+spring.datasource.url=jdbc:mysql://localhost:3306/your_database_name
+spring.datasource.username=your_database_username
+spring.datasource.password=your_database_password
+spring.datasource.driver-class-name=com.mysql.cj.jdbc.Driver
+spring.jpa.hibernate.ddl-auto=update
+spring.jpa.show-sql=true
+spring.jpa.properties.hibernate.dialect=org.hibernate.dialect.MySQL8Dialect
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+# Server Configuration (Optional)
+server.port=8080
