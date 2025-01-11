@@ -1,0 +1,63 @@
+/* StudentDashboard.css */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.display-4 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #343a40;
+}
+
+h2 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #495057;
+}
+
+.table-responsive {
+    margin-top: 20px;
+}
+
+.table {
+    border-radius: 8px;
+    border: 1px solid #ddd;
+}
+
+.thead-dark {
+    background-color: #343a40;
+    color: white;
+}
+
+.table-striped tbody tr:nth-child(odd) {
+    background-color: #f9f9f9;
+}
+
+.table-bordered {
+    border: 1px solid #ddd;
+}
+
+.input-group {
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.input-group-text {
+    background-color: #28a745;
+    color: white;
+}
+
+.badge-danger {
+    background-color: #dc3545;
+    color: white;
+}
+
+.badge-success {
+    background-color: #28a745;
+    color: white;
+}
+
+.text-center {
+    text-align: center;
+}

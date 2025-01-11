@@ -1,0 +1,34 @@
+/* LibrarianDashboard.css */
+
+.container {
+    background-color: #f8f9fa;
+  }
+  
+  table {
+    background-color: white;
+  }
+  
+  table th, table td {
+    text-align: center;
+    vertical-align: middle;
+  }
+  
+  h1 {
+    font-family: 'Arial', sans-serif;
+    color: #007bff;
+  }
+  
+  h2 {
+    font-family: 'Arial', sans-serif;
+    color: #6c757d;
+  }
+  
+  .form-group label {
+    font-weight: bold;
+  }
+  
+  button:hover {
+    opacity: 0.8;
+  }
+  
+  
